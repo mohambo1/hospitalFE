@@ -1,1 +1,40 @@
-<p>team-work works!</p>
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+
+
+</head>
+
+
+
+
+
+
+<!-- Team -->
+<section id="team" class="pb-5">
+    <div class="container">
+        <h4 class="section-title h1">OUR TEAM</h4>
+        <div class="row">
+<div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let user of users">
+    <div  ontouchstart="this.classList.toggle('hover');">
+        
+            <div class="frontside">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <p><img class=" img-fluid" src="{{user.Image}}" alt="card image"></p>
+                        <h4 class="card-title">{{user.name}}</h4>
+                        <p class="card-text">{{user.description}}</p>
+                       
+                    </div>
+                </div>
+            </div>
+       
+    </div>
+</div>
+
+<div class="col-md-2">
+    <a href="http://localhost:4200/doctor-home-component"><input  type="button" class="profile-edit-btn" name="btnAddMore" value="close"/></a>
+  </div>

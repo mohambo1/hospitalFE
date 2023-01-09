@@ -13,7 +13,7 @@ import { RegisterPatientComponent } from './pages/register-patient/register-pati
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DoctorHomeComponent } from './pages/doctor-home/doctor-home.component';
-import { NurseHomeComponent } from './pages/nurse-home/nurse-home.component';
+
 import { PatientHomeComponent } from './pages/patient-home/patient-home.component';
 import { MessagesComponent } from './pages/messages/messages.component';
 import { ProfileComponent } from './pages/profile/profile.component';
@@ -21,6 +21,20 @@ import { TeamWorkComponent } from './pages/team-work/team-work.component';
 import { PatientDataComponent } from './pages/patient-data/patient-data.component';
 import { WorkingScheduleComponent } from './pages/working-schedule/working-schedule.component';
 import { WorkingTimeComponent } from './pages/working-time/working-time.component';
+import { NurseHomeComponent } from './pages/nurse-home/nurse-home.component';
+import { WorkSheduleNurseComponent } from './pages/work-shedule-nurse/work-shedule-nurse.component';
+import { PatientDataNurseComponent } from './pages/patient-data-nurse/patient-data-nurse.component';
+import { TeamNurseComponent } from './pages/team-nurse/team-nurse.component';
+import { UdpatetestComponent } from './pages/udpatetest/udpatetest.component';
+import { MessagenurseComponent } from './pages/messagenurse/messagenurse.component';
+import { ProfilenurseComponent } from './pages/profilenurse/profilenurse.component';
+import { MessagePatientComponent } from './pages/message-patient/message-patient.component';
+import { MedicalFileComponent } from './pages/medical-file/medical-file.component';
+import { ViewTestResultComponent } from './pages/view-test-result/view-test-result.component';
+import { ReminderToTakeMedicineComponent } from './pages/reminder-to-take-medicine/reminder-to-take-medicine.component';
+import { BookAnAppointmentComponent } from './pages/book-an-appointment/book-an-appointment.component';
+import { ViewUpcomingAppointmentComponent } from './pages/view-upcoming-appointment/view-upcoming-appointment.component';
+import { SharedService } from './services/shared.service';
 
 
 @NgModule({
@@ -34,7 +48,7 @@ import { WorkingTimeComponent } from './pages/working-time/working-time.componen
     RegisterPatientComponent,
     ContactUsComponent,
     DoctorHomeComponent,
-    NurseHomeComponent,
+   
     PatientHomeComponent,
     MessagesComponent,
     ProfileComponent,
@@ -42,6 +56,19 @@ import { WorkingTimeComponent } from './pages/working-time/working-time.componen
     PatientDataComponent,
     WorkingScheduleComponent,
     WorkingTimeComponent,
+    NurseHomeComponent,
+    WorkSheduleNurseComponent,
+    PatientDataNurseComponent,
+    TeamNurseComponent,
+    UdpatetestComponent,
+    MessagenurseComponent,
+    ProfilenurseComponent,
+    MessagePatientComponent,
+    MedicalFileComponent,
+    ViewTestResultComponent,
+    ReminderToTakeMedicineComponent,
+    BookAnAppointmentComponent,
+    ViewUpcomingAppointmentComponent,
    
   ],
   imports: [
@@ -53,7 +80,7 @@ import { WorkingTimeComponent } from './pages/working-time/working-time.componen
     BrowserAnimationsModule,
      
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
   selector: 'app-login',
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+  constructor(private sharedService:SharedService){}
 
-  names = ["muhammad", "abd", "alaa", "anzi"]
+changeLoginStatus(){
+  this.sharedService.toggleLoginStatus();
 }
+
+
+}
+

@@ -1,3 +1,52 @@
-.navbar{
-    display: none;
+.nav-item{
+    padding:3% 0 ;
 }
+
+
+.big-heading{
+    padding: 30% 0 0 2%;
+    line-height: 1rem;
+    font-family: "Shadows Into Light";
+}
+
+
+.end{
+    padding: 30% 0 0 0;
+   text-align: center;
+}
+.contact{
+    text-align: center;
+    margin-top: 15%;
+}
+
+
+section {
+    padding: 100px 100px;
+}
+.main {
+   
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items:flex-end;    
+    background: url(../../../assets/images/doctor1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+   
+}
+
+
+.social-icons a{
+    color: #4e9eff;
+    font-size: 1.7em;
+    padding-right: 40px;
+
+}
+.social-icons{
+
+    padding-left: 83%;
+    margin-bottom: 8%;
+}
+
+
